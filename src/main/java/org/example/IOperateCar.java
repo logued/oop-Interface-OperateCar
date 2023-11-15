@@ -3,7 +3,11 @@ package org.example;
 // Defines an Interface that declares signatures for a number of methods
 // but does not implement code for any of the methods.
 
-public interface OperateCar {
+// A developer writing a car operator class (e.g. OperatBMW760i ) must
+// implement this Interface so that it can be used by the OperateCarClient.
+//
+
+public interface IOperateCar {
 
     // constant declarations, if any
 

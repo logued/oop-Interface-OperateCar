@@ -1,21 +1,22 @@
 package org.example;
 
-// This class is an implementation of the OperateClass interface
+// This class is a concrete implementation of the IOperateCar interface
 // for a specific car - a BMW760i.
 // It is often called a "Concrete" class for this reason.
 //
 // This is the code that would be written by the BMW Software Engineers
 // specifically for controlling the electronic/mechanical parts of a BMW760i.
-// All methods in the interface are implemented, thus allowing the remote
-// car driving system to control this car.
+// All methods in the interface are implemented, thus allowing the
+// OperateCarClient component to control the car by calling the  methods
+// defined in the IOperateCar interface.
 //
 // The software would be installed in the car's computer, and then
 // the remote driving system could make calls to this software
 // using the methods defined by the interface.
 
-public class OperateBMW760i implements OperateCar {
+public class OperateBMW760I implements IOperateCar {
 
-    // the OperateCar method signatures, with implementation --
+    // the IOperateCar method signatures, with implementation --
     // for example:
     public int signalTurn(Direction direction, boolean signalOn) {
         // code to turn BMW's LEFT turn indicator lights on
